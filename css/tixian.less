@@ -1,0 +1,104 @@
+
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.container,
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.box(@ver: row) {
+    display: flex;
+    flex-direction: @ver;
+}
+.container{
+    .box(column);
+    .header{
+        .full(100%,.87rem,#fff);
+        .box;
+        align-items: center;
+        .h_left{
+            margin-left: .4rem;
+            img{.full(.34rem,auto,none);}
+        }//h_left
+        .h_center{
+            flex: 1;
+            margin-left: .42rem;
+            font-size: .3rem;
+        }//h_center
+        .h_right{
+            margin-right: .4rem;
+            img{.full(.36rem,auto,none);}
+        }//h_right
+        
+    }//header
+    .section{
+        flex: 1;
+        background-color: #eeeeee;
+        .box(column);
+        overflow: auto;
+        .s_yinghang{
+            .full(auto,.96rem,#fff);
+            margin: .2rem .19rem;
+            .box;
+            align-items: center;
+            p{img{.full(.42rem,auto,none);
+            margin-left: .27rem;}}
+            h2{flex: 1;margin-left: .3rem;font-size: .3rem;}
+             b{img{.full(.18rem,auto,none);
+            margin-right: .16rem;}}
+        }//s_yinghang
+        .s_tixian{
+            .full(100%,2.32rem,#fff);
+            .box(column);
+            h3{
+                font-size: .25rem;
+                color: #8c8c8c;
+                margin: .18rem 0 0 .42rem;
+            }//h3
+            i{
+              font-size: .3rem;
+                color: #8c8c8c;
+                margin: .23rem .4rem 0 .42rem; 
+                border-bottom: 1px solid #d9d9d9;
+                span{
+                    margin:0 .5rem;
+                    color: #f9384b;
+                    font-size: .44rem;
+                } 
+            }//i
+            em{
+               font-size: .26rem;
+               color: #333333; 
+               margin: .32rem .4rem;
+               .box;
+               b{
+                 color: #66a4ea;  
+               }
+               span{
+                   flex: 1;
+                    color: #f9384b;
+                    font-size: .25rem;
+                } 
+            }//em
+            
+        }//s_tixian
+        .s_qurtx{
+            .full(auto,.76rem,#ff9914);
+            margin: .88rem .4rem 0 .4rem;
+            border-radius: .1rem;
+            text-align: center;
+            line-height: .76rem;
+            color: #fff;
+            font-size: .3rem;
+        }//s_qurtx
+    }//section
+    .footer{
+        
+    }//footer
+}//container

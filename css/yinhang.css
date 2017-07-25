@@ -1,0 +1,148 @@
+@import url(reset.css);
+.container,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  height: 0.94rem;
+  background: #f95d6c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .h_pic img {
+  width: 0.34rem;
+  height: auto;
+  background: none;
+  margin-left: .4rem;
+}
+.header .h_txt {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  font-size: .32rem;
+}
+.section {
+  flex: 1;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.section .s_gr {
+  display: flex;
+  flex-direction: column;
+}
+.section .s_gr .one {
+  width: auto;
+  height: 0.86rem;
+  background: none;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: .24rem;
+  color: #999999;
+  line-height: .86rem;
+  padding-left: .4rem;
+  box-sizing: border-box;
+}
+.section .s_gr .one img {
+  width: 0.38rem;
+  height: auto;
+  background: none;
+}
+.section .s_gr .one span {
+  color: #fcac59;
+}
+.section .s_gr .one:last-child {
+  border-bottom: none;
+}
+.section .s_gr .two {
+  width: auto;
+  height: 0.86rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: .24rem;
+  color: #999999;
+  padding-left: .4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.section .s_gr .two .xinxi {
+  flex: 1;
+  margin-left: 1.08rem;
+  font-size: .28rem;
+  color: #333333;
+}
+.section .s_gr .two .xinxi2 {
+  width: 2.7rem;
+  height: auto;
+  background: none;
+  border: 1px solid #aaaaaa;
+  border-radius: .12rem;
+  margin-left: .58rem;
+  text-align: center;
+  line-height: .55rem;
+}
+.section .s_gr .two .yam {
+  width: 1.68rem;
+  height: auto;
+  background: #ff9914;
+  border-radius: .12rem;
+  color: #FFFFFF;
+  text-align: center;
+  margin-left: .36rem;
+  line-height: .55rem;
+}
+.section .s_gr .two .pic {
+  margin-right: .4rem;
+}
+.section .s_gr .two .pic img {
+  width: 0.36rem;
+  height: auto;
+  background: none;
+}
+.section .s_gr .s_yinghang {
+  width: 100%;
+  height: 0.86rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+.section .s_gr .s_yinghang p img {
+  width: 0.42rem;
+  height: auto;
+  background: none;
+  margin-left: .27rem;
+}
+.section .s_gr .s_yinghang h2 {
+  flex: 1;
+  margin-left: .3rem;
+  font-size: .3rem;
+}
+.section .s_gr .s_yinghang b img {
+  width: 0.18rem;
+  height: auto;
+  background: none;
+  margin-right: .16rem;
+}
+.section .s_qurtx {
+  width: auto;
+  height: 0.76rem;
+  background: #f9384b;
+  margin: .88rem 1.4rem 0 1.4rem;
+  border-radius: .1rem;
+  text-align: center;
+  line-height: .76rem;
+  color: #fff;
+  font-size: .3rem;
+}

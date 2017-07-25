@@ -1,0 +1,115 @@
+@import url(reset.css);
+.container,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .header {
+  width: 100%;
+  height: 0.94rem;
+  background: #f95d6c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .header .h_pic img {
+  width: 0.34rem;
+  height: auto;
+  background: none;
+  margin-left: .4rem;
+}
+.container .header .h_txt {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  font-size: .32rem;
+}
+.container .section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee;
+}
+.container .section .b_tou {
+  width: 100%;
+  height: 1.16rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .section .b_tou .tou_left {
+  flex: 1;
+  font-size: .32rem;
+  color: #333333;
+  margin-left: .4rem;
+}
+.container .section .b_tou .tou_right img {
+  width: 0.99rem;
+  height: auto;
+  background: none;
+  margin-right: .4rem;
+}
+.container .section .b_two {
+  width: 100%;
+  height: 0.88rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .section .b_two .tou_left {
+  flex: 1;
+  font-size: .32rem;
+  color: #333333;
+  margin-left: .4rem;
+}
+.container .section .b_two .tou_right {
+  color: #bfbfbf;
+  margin-right: .4rem;
+  font-size: .28rem;
+}
+.container .section .b_two .tou_right img {
+  width: 0.14rem;
+  height: auto;
+  background: none;
+}
+.zhezhao {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.zhezhao .zhezhao_box {
+  width: 4.5rem;
+  height: 2.62rem;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -1.31rem;
+  margin-left: -2.25rem;
+  border-radius: .1rem;
+}
+.zhezhao .zhezhao_box .z_list {
+  display: flex;
+  flex-direction: column;
+}
+.zhezhao .zhezhao_box .z_list .z_item {
+  width: auto;
+  height: 0.85rem;
+  background: none;
+  border-bottom: 1px solid #efefef;
+  line-height: .85rem;
+  color: #020202;
+  margin: 0 .44rem;
+}
